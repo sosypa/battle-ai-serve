@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: metro-royale-online
+    runtime: node
+    plan: free
+    region: frankfurt
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    autoDeploy: true
